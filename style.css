@@ -1,0 +1,574 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container1 {
+    display: inline-flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 90px;  
+    height: 90px;  
+    z-index: -1;
+}
+/*  Containter2 design*/
+.container2{
+    margin-right: 7%;
+    display: inline-flex;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+}
+.first_header{
+    margin-top: 25px; 
+    font-size: medium;
+    margin-left: 85%;
+    display: inline-flex;
+    background-color: rgb(128, 172, 229);
+}
+.second_header{
+    margin: 0%;
+    font-size: x-large;
+    z-index: 1;
+   
+}
+/* Styling the header divider */
+.divider1 {
+    margin-left: 55px;
+    width: 90%;
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin-top: 19px;
+}
+
+/* Styling Container3 and tags in it*/
+.container3{
+    position: relative;
+}
+.first_paragraph{
+    word-wrap: break-word;
+    overflow: auto;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 5%;
+}
+
+.requirements_list{
+    display: -ms-inline-flexbox;
+    margin-left: 70px;
+    margin-right: 5%;
+        width: 75%;
+}
+
+/* Styling container 4 inside container 3 */
+.container4{
+    background-color: rgb(188, 214, 201);
+    position: absolute;
+    top: 0px;
+    right: 15%;
+    width: 190px;
+    height: 185px;
+}
+.container4 h5 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#input1{
+    margin-top: 10px;
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.label1{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#attachments{
+    margin-top: 3px; 
+    margin-left: 5px;
+}
+
+/* Second divider */
+.divider2 {
+    margin-left: 55px;
+    width: 90%;
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin-top: 0px;
+}
+
+
+/* Styling the section application type*/
+.Applicaion_type{
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 4%;
+    
+}
+
+/* Makking New radio button to check box look alike */
+.new_application{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #555;
+    border-radius: 2px; /* squared edges like checkboxes */
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.new_application:checked::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+/* Makking Replacement radio button to check box look alike */
+.replacement_application{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #555;
+    border-radius: 2px; /* squared edges like checkboxes */
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.replacement_application:checked::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+
+/* CSS for Applicant Details */
+
+.Applicant_details{
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 4%;
+}
+
+.surname{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+}
+.givenname{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+}
+
+
+.liscence_CRN_number{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+}
+
+#applicants_date_of_birth{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+}
+.resenditial_address{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+.residential_postcode{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0.33px;
+}
+.mailing_address{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
+.mailing_postcode{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0.33px;
+}
+#applicants_emailadd{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+}
+#applicants_mobile_number{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+}
+
+
+
+ /* CSS for Are you a pensioner or Seniors Card holder Section */
+
+.pensioner_senior_card_holder{
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 4%;
+}
+
+/* <!--Are you an Australian citizen or permanent
+resident of Australia Section  --> */
+
+.permanent_resident_section{
+    display: inline-block;
+    position: absolute;
+    top: 290px;
+    right: 4%;
+    width: 30%;
+    height: auto;
+    min-height: 100px;
+    background-color: white;
+}
+
+#non_permanent_resident_entry_date{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/* <!--Have you had a NSW licence, photo card, proof of
+age card, registration or permit in your current
+name or in any other name?  --> */
+
+.havehad_nswliscence_photocard_reg_permit{
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    right: 4%;
+    width: 30%;
+    height: auto;
+    min-height: 100px;
+    background-color: white;
+}
+
+#nsw_liscence_photocard_registration_permit_details{
+    padding-right: 50px;
+    padding-bottom: 40px;
+}
+
+
+
+/* <!-- If you listed a NSW licence above, have you ever
+had the number changed due to a data breach or
+identity fraud? Section --> */
+
+.data_breach{
+    display: inline-block;
+    position: absolute;
+    top: 590px;
+    right: 4%;
+   height: auto;
+    width: 30%;
+    min-height: 150px;
+}
+
+.data_breach h4 {
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+
+/* Applicant declaration  Section */
+.Application_declaration{
+    display: inline-block;
+    position: absolute;
+    top: 690px;
+    right: 4%;
+   height: 150px;
+    width: 30%;
+}
+
+#clear-signature{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 9px;
+    transition-duration: 0.4s;
+
+}
+#clear-signature:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+#signature-pad{
+    width:400; 
+    height:100;
+    border: 1px solid black;
+}
+
+#applicants_signature_date{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 70px;
+}
+.final_paragraph{
+    word-wrap: break-word;
+    overflow: auto;
+}
+.pre2{
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+
+/* Styling the Resent and the Submit Buttons */
+.form-buttons {
+    display: inline;
+    margin: 30px 0;
+    text-align: bottom;
+    align-content: baseline;
+    padding-right: 4%;
+}
+.reset-button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 9px;
+    transition-duration: 0.4s;
+
+}
+.reset-button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.submit_button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 9px;
+    transition-duration: 0.4s;
+}
+.reset-button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+/* Media Query for responsiveness */
+
+@media screen and (max-width: 1070px) {
+    .first_paragraph {
+        margin-right: 220px; /* Add space for container4 */
+        font-size: 14px; /* Slightly reduce font size */
+    }
+
+    .requirements_list {
+        margin-right: 220px; /* Add space for container4 */
+        width: auto; /* Allow list to be flexible */
+    }
+
+    .container4 {
+        right: 20px; /* Adjust position */
+        width: 180px; /* Slightly reduce width */
+    }
+
+    /* Adjust line breaks for list items */
+    .requirements_list li {
+        word-wrap: break-word;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust permanent reside placement */
+    .permanent_resident_section {
+        position: absolute;
+        top: 320px;
+        right: 15%;
+        margin-top: 20px;
+    }
+    .havehad_nswliscence_photocard_reg_permit{
+       
+        top: 480px;
+        right: 15%;
+    }
+    .data_breach {
+        position: static;
+        display: block;
+        width: 90%;
+        margin: 20px 4%;
+        height: auto;
+    }
+    .h4{
+        display: inline-block;
+    }
+
+    .Application_declaration{
+        margin-top: 20px;
+        top: 700px;
+        right: 15%;
+}
+.Application_declaration {
+    position: static;
+    display: block;
+    width: 90%;
+    margin: 20px 4%;
+    height: auto;
+    clear: both;
+}
+}
+
+
+@media screen and (max-width: 974px) {
+
+    .permanent_resident_section {
+        
+        top: 350px;
+       
+      
+    }
+    
+    .havehad_nswliscence_photocard_reg_permit{
+       
+        top: 530px;
+        right: 15%;
+    }
+    .data_breach{
+        margin-top: 20px;
+        top: 670px;
+        right: 10%;
+    }
+
+    .Application_declaration{
+        margin-top: 20px;
+        top: 950px;
+        right: 15%;
+}
+}
+
+@media screen and (max-width: 884px) {
+    
+    .permanent_resident_section {
+        position: absolute;
+        top: 400px;  
+      
+    }
+     .havehad_nswliscence_photocard_reg_permit{
+       
+        top: 590px;
+        right: 15%;
+    }
+    .data_breach{
+        margin-top: 20px;
+        top: 740px;
+        right: 10%;
+    }
+    .Application_declaration{
+        margin-left: 24%;
+        display: block;
+        position: relative;
+        top: 0%;
+
+}
+}
+@media screen and (max-width: 872px) {
+    .permanent_resident_section {
+        margin-left: 24%;
+        display: block;
+        position: static;
+    }
+
+    .havehad_nswliscence_photocard_reg_permit {
+        position: absolute;
+        top: 530px;
+        right: 20px;
+        width: 35%;
+    }
+    .data_breach{
+        margin-top: 20px;
+        top: 670px;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container4 {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 20px auto;
+        display: block;
+        width: 300px;
+    }
+
+    .first_paragraph,
+    .requirements_list {
+        margin-right: 20px;
+    }
+
+    .permanent_resident_section {
+        position: static;
+        display: block;
+        width: 90%;
+        margin: 20px 4%;
+        clear: both;
+    }
+
+    .havehad_nswliscence_photocard_reg_permit {
+        position: static;
+        display: block;
+        width: 90%;
+        margin: 20px 4%;
+        clear: both;
+    }
+    .form-buttons {
+        padding-right: 20px;}
+
+        .submit_button{
+        
+                padding-right: 20px;}
+        }
+
+
+@media screen and (max-width: 530px) {
+    .container1{
+        width: 50px;  
+    height: 50px; 
+    }
+
+    .second_header{
+        margin: 0%;
+        font-size: large;
+        z-index: 1;
+       
+    }
+
+   
+
+ 
+}

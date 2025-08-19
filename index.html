@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Photo Card Applicaion</title>
+    <link rel="icon" href="nswgov.png">
+</head>
+<body>
+    <div class="container1">
+        <img src="nswgov.png" alt="dummy_gov_logo">
+    </div>
+    <!-- Containter2 -->
+<div class="container2">
+    <h3 class="first_header">Transport for Dummy</h3>
+    <h1 class="second_header">Mock Photo Card Applicaion </h1></div>
+<!-- Divider -->
+ <hr class="divider1">
+
+ <!-- Form tag start -->
+<form action="/submit-form" method="post">
+
+    <!-- Container 3 -->
+<div class="container3">
+    <pre class="first_paragraph">
+       <b>        This is a mock form created for demonstration and  educational purposes only. 
+        It is not affiliated with or endorsed by any government department or official service.
+        To apply for a dummy Photo Card, please visit a Service  Centre with this completed form. </b> 
+    </pre><br>
+    <ul class="requirements_list">
+        <li><b>Who can get a photo card - </b>You must be 18 years or older .</li>
+        
+        <li><b>Signature on your POI documents - </b>  This is a mock form created for demonstration and <br> educational purposes only. <br>So, any kind of signatures are not compulsory.</li>
+        <li><b>Expiry date - </b>A photo card is valid for 5 years, or 10 years for customers 21 years or over.</li>
+        
+        <li><b><u>This form is for educational and demonstration purposes only. <br>It is not affiliated with or endorsed by any government or official entity.</u></b></li>
+    </ul>
+
+<div class="container4">
+<h5>Office use</h5>
+<input type="text" name="customer_number" id="input1" placeholder="Customer Number" required><br>
+
+<label for="attachment" class="label1"> attachment
+<input type="file" name="attachment" id="attachments"
+ disabled></label>
+</div>
+<!-- End div4 -->
+</div><!-- End container3  -->
+
+
+<!-- Divider2 -->
+
+<hr class="divider2">
+
+<main class="form-main">
+
+    <!-- Application Type Section -->
+    <section class="Applicaion_type">
+    <h4 class="third_header">Type Of Application</h4>
+
+    <label><input type="radio" name="application_type" class="new_application" value="New" required> New &#8594</label> 
+
+        <!-- Options for duration of new application -->
+        <label><input type="radio" name="new_application_duration" value="5years" class="duration_option" disabled> 5 Years</label>
+    <label><input type="radio" name="new_application_duration" value="10years" class="duration_option" disabled> 10 Years</label>
+    <br>
+
+
+<!-- Replacement Application -->
+<label><input type="radio" name="application_type" class="replacement_application" value="Replacement"> Replacement &#8594 Reason for replacement</label> 
+<br>
+
+           <!-- Reasons for Replacement -->
+        <label><input type="checkbox" name="replacement_reason[]" class="replacement_reason" value="lost" disabled> Lost</label> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label><input type="checkbox" name="replacement_reason[]" class="replacement_reason" value="Poor_Card_Quality" disabled> Poor Card Quality</label><br>
+     
+  <label><input type="checkbox" name="replacement_reason[]" class="replacement_reason" value="stolen" disabled> Stolen</label>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+  <label><input type="checkbox" name="replacement_reason[]" class="replacement_reason" value="damaged" disabled> Damaged/Destroyed</label> 
+  <br> 
+  <label><input type="checkbox" name="replacement_reason[]" class="replacement_reason"value="not_received" disabled> Not received</label> &nbsp; &nbsp;
+
+  <label><input type="checkbox" name="replacement_reason[]" class="replacement_reason" value="change" disabled> Change of appearance</label><br>
+
+    <label><input type="checkbox" name="replacement_reason[]" class="replacement_reason" value="Change_of_personal_details" disabled> Personal details have changed</label>
+    </section> <br>
+
+
+    <!-- Applicant Details Section -->
+    <section class="Applicant_details">
+
+        <h4>Applicant Details For Dummy Photo ID</h4>
+        <label ><input type="text" name="applicants_surname" class="surname" placeholder="Surname" required></label><br><br>
+
+        <label ><input type="text" name="applicants_givenname" class="givenname" placeholder="Given Name(s)" required></label> <br><br>
+
+        <label >Licence/Customer number (if applicable) <br><input type="text" name="liscence_CRN_number" class="liscence_CRN_number" ></label> <br><br>
+
+        <label>Date of birth <br><input type="datetime" name="applicants_date_of_birth" id="applicants_date_of_birth" required placeholder=" D / M / Y"></label>&nbsp;&nbsp;&nbsp;
+
+        <label>Gender <input type="radio" name="Gender" value="Male">Male</label>
+    
+        <label><input type="radio" name="Gender" value="Female">Female</label> <br><br>
+
+        <label>Your Residential address<br><input type="text" name="applicants_residential_address" class="resenditial_address" required></label>
+        <label><input type="number" placeholder="Postcode" name="residential_postcode" class="residential_postcode" required></label><br><br>
+
+
+        <label>Mailing address (only enter if it differs to residential address) <br> <input type="text" name="applicants_mailing_address" class="mailing_address">
+        </label>
+        <label><input type="number" placeholder="Postcode" name="mailing_postcode" class="mailing_postcode" required></label><br><br>
+
+        <label>Email Address <br> <input type="email" name="applicants_emailadd" id="applicants_emailadd" required></label> <br><br>
+
+        
+        <label>Mobile Number <br> <input type="tel" name="applicants_mobile_number" id="applicants_mobile_number" required></label>
+    </section> <br><br>
+
+
+<!--  Are you a pensioner or Seniors Card holder? Section-->
+<section class="pensioner_senior_card_holder">
+    <h4>Are you a pensioner or Seniors Card holder?</h4>
+    <p>(Pensioner status will be validated)</p><br>
+
+    <label>No &nbsp;&nbsp;<input type="radio" name="pensioner" value="Not a Pensioner"></label>&nbsp;&nbsp;
+    <label>yes&nbsp;&nbsp;<input type="radio" name="pensioner" value="A Pensioner"></label>
+
+</section>
+<br><br>
+
+<!--Are you an Australian citizen or permanent
+resident of Australia Section  -->
+<section class="permanent_resident_section">
+<h4>Are you an Australian citizen or permanent
+    resident of Australia?</h4>
+    <label>No&nbsp;&nbsp;<input type="radio" name="permanent_resident" value="No">&nbsp;&nbsp;What is your last date
+        of entry in Australia.</label>
+        <label><input type="datetime" name="non_permanent_resident_entry_date" id="non_permanent_resident_entry_date" placeholder="D / M /Y"></label><br>
+
+        <label>Yes&nbsp;&nbsp;<input type="radio" name="permanent_resident" value="Yes">&nbsp;Evidence required. Your permanent residency may
+            be verified with the respective Department.</label>
+</section>
+
+<!--Have you had a NSW licence, photo card, proof of
+age card, registration or permit in your current
+name or in any other name?  -->
+<section class="havehad_nswliscence_photocard_reg_permit">
+
+<h4 class="h4">Have you had a licence, photo card, proof of
+    age card, registration or permit in your current
+    name or in any other name?</h4>
+
+<label>No &nbsp;&nbsp;<input type="radio" name="have_had_nsw_liscence_photocard_registration_permit" value="No"></label>&nbsp;&nbsp;&nbsp;
+
+<label>Yes&nbsp;<input type="radio" name="have_had_nsw_liscence_photocard_registration_permit" value="Yes">&nbsp;&nbsp;&nbsp;Give Details</label><br>
+
+<label><textarea name="nsw_liscence_photocard_registration_permit_details" id="nsw_liscence_photocard_registration_permit_details"></textarea></label>
+
+</section>
+
+
+<!-- If you listed a NSW licence above, have you ever
+had the number changed due to a data breach or
+identity fraud? Section -->
+
+<section class="data_breach">
+    <h4>If you have listed a licence above, have you ever
+        had the number changed due to a data breach?</h4>
+
+    <label>No &nbsp;&nbsp;<input type="radio" name="nsw_liscence_number_change_due_to_data_breach" id="no_data_breach" value="No"></label>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <label>Yes &nbsp;&nbsp;<input type="radio" name="nsw_liscence_number_change_due_to_data_breach" id="data_has_been_breach" value="Yes"></label>
+</section>
+
+<!--  Applicant declaration  Section-->
+
+<section class="Application_declaration">
+<h4>Applicant Declaration</h4><br>
+<ul>
+    <li> <b>Note (This is a dummy form for educational purpose. So, we do not require a signature) 
+    </b></li><li>  I declare the contents of this application are true
+        and complete. </li>
+    <li>I acknowledge it is an offence under the Photo Card
+        Act 2004 to obtain or apply for a Photo Card by
+        false statement, misrepresentation or other
+        dishonest means.</li>
+</ul><br>
+<canvas id="signature-pad" ></canvas><br>
+        <button type="button" id="clear-signature">Clear Signature</button><br>
+        <input type="hidden" name="applicants_signature" id="signature-input"> <br>
+
+<label>Date <br><input type="datetime" name="applicants_signature_date" id="applicants_signature_date" placeholder="D / M / Y"></label>
+<br><br>
+<p class="final_paragraph">
+   This is a Dummy form so no documents
+with your signature are required please disregard any section that breaches your personal/private information. 
+</p> <br><br>
+
+<pre class="pre2">
+   <b>Privacy Statement</b> 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ut veniam illo aspernatur nesciunt, autem nisi?
+ Saepe quis iste qui doloremque sed veniam id odio. Rem accusamus labore laboriosam necessitatibus ipsam 
+ doloribus ipsum quaerat et eligendi, veritatis nulla explicabo provident quo impedit accusantium quam. 
+ Molestiae dolorum eos vitae reprehenderit sapiente ut corrupti, quidem deserunt voluptatem est earum placeat 
+ pariatur mollitia eaque quo at rerum. Debitis obcaecati 
+ assumenda qui dolores ipsa ad tempora dolorum pariatur omnis, iste nam? Atque, quia quod?
+
+Find out why we collect your personal information, including
+how we use and manage it, by reading our privacy
+statement at transport.dummy or phone 134567 to
+request a copy.
+
+</pre>
+</section>
+
+
+<div class="form-buttons">
+    <button type="reset" class="reset-button">Reset Form</button>
+    <button type="submit" class="submit_button" >Submit</button>
+</div> <br><br>
+
+
+</main>
+
+
+   
+</form>
+</body>
+</html>
